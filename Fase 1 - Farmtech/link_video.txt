@@ -1,0 +1,10 @@
+VIDEO DE DEMONSTRACAO - FarmTech Solutions
+==========================================
+
+Link do YouTube (nao listado): <COLE AQUI O LINK APOS FAZER O UPLOAD>
+
+Conteudo do video (ate 5 minutos):
+- Execucao da aplicacao Python (menu, cadastro, calculo de area e insumos,
+  atualizacao, delecao e exportacao para CSV);
+- Execucao da estatistica em R (media e desvio padrao);
+- Execucao do monitoramento climatico em R (API Open-Meteo).
