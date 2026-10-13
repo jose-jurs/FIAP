@@ -125,7 +125,8 @@ fase2/
 │   └── leituras.csv               # histórico de leituras (amostra)
 └── docs/
     ├── circuito.svg               # diagrama lógico das ligações
-    └── wokwi_circuito.png         # print do circuito rodando no Wokwi
+    ├── wokwi_circuito.png         # print do circuito rodando no Wokwi
+    └── farmtech_fase2_demo.mp4    # vídeo da simulação
 ```
 
 ---
@@ -186,7 +187,7 @@ de probabilidade e decide **LIGAR a bomba**.
 
 ## Vídeo de demonstração
 
-[Assistir no YouTube](https://youtube.com/shorts/oImNKx62skk)
+[Assistir no YouTube](https://youtube.com/shorts/oImNKx62skk) · cópia local: [`docs/farmtech_fase2_demo.mp4`](docs/farmtech_fase2_demo.mp4)
 
 ---
 
