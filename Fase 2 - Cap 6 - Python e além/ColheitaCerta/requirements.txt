@@ -1,0 +1,5 @@
+# Dependência do sistema principal (src/)
+oracledb>=2.0.0
+
+# Opcional: apenas para regenerar os gráficos do README (scripts/gerar_graficos.py)
+matplotlib>=3.7

@@ -1,0 +1,9 @@
+ColheitaCerta - Monitor de Perdas na Colheita de Cana-de-Açúcar
+FIAP - Fase 2 - Cap 6 - Python e além
+Grupo FJDJV
+
+Repositório (raiz):
+https://github.com/jose-jurs/FIAP
+
+Pasta deste projeto no repositório:
+https://github.com/jose-jurs/FIAP/tree/main/Fase%202%20-%20Cap%206%20-%20Python%20e%20al%C3%A9m/ColheitaCerta

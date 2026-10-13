@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+# dados gerados em tempo de execução
+data/*
+!data/.gitkeep
