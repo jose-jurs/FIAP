@@ -162,5 +162,5 @@ void loop() {
   lcd.setCursor(0, 0);
   lcd.printf("U:%2.0f%% pH:%.1f", umidade, ph);
   lcd.setCursor(0, 1);
-  lcd.printf("NPK:%d/3 %s", npk, bombaLigada ? "BOMBA ON" : "bomba off");
+  lcd.printf("NPK:%d Bomba:%s", npk, bombaLigada ? "ON" : "OFF");  // max 16 colunas
 }

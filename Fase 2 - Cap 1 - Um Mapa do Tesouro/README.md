@@ -54,10 +54,13 @@ Como o Wokwi não tem sensores agrícolas reais, usamos as substituições pedid
 
 ## Circuito e pinagem
 
-![Diagrama do circuito](docs/circuito.svg)
+**Circuito montado no Wokwi** ([abrir o projeto](https://wokwi.com/projects/477723225635026945)):
 
-> O SVG acima é o diagrama lógico. **Na entrega, inclua também o print real do
-> circuito montado no Wokwi** (`docs/wokwi_circuito.png`).
+![Circuito no Wokwi](docs/wokwi_circuito.png)
+
+**Diagrama lógico das ligações:**
+
+![Diagrama do circuito](docs/circuito.svg)
 
 | Componente | Pino do componente | GPIO do ESP32 |
 |---|---|---|
@@ -121,7 +124,7 @@ fase2/
 │   └── leituras.csv               # histórico de leituras (amostra)
 └── docs/
     ├── circuito.svg               # diagrama lógico das ligações
-    └── wokwi_circuito.png         # (adicionar: print real do Wokwi)
+    └── wokwi_circuito.png         # print do circuito rodando no Wokwi
 ```
 
 ---
@@ -192,7 +195,7 @@ de probabilidade e decide **LIGAR a bomba**.
 - [x] **Ir Além 1:** integração Python + API pública (OpenWeather) via Serial
 - [x] **Ir Além 2:** análise estatística em R (descritiva + regressão logística)
 - [ ] **Vídeo** no YouTube (até 5 min) — adicionar link
-- [ ] **Print real do circuito no Wokwi** — adicionar em `docs/`
+- [x] **Print real do circuito no Wokwi** (`docs/wokwi_circuito.png`)
 
 ---
 

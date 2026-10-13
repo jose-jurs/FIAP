@@ -25,28 +25,28 @@
   ],
   "connections": [
     [ "esp:GND.1", "btnN:1.l", "black", [] ],
-    [ "esp:D18",   "btnN:2.l", "green", [] ],
+    [ "esp:18",   "btnN:2.l", "green", [] ],
     [ "esp:GND.1", "btnP:1.l", "black", [] ],
-    [ "esp:D19",   "btnP:2.l", "green", [] ],
+    [ "esp:19",   "btnP:2.l", "green", [] ],
     [ "esp:GND.1", "btnK:1.l", "black", [] ],
-    [ "esp:D5",    "btnK:2.l", "green", [] ],
+    [ "esp:5",    "btnK:2.l", "green", [] ],
 
     [ "esp:3V3",  "ldr:VCC", "red",   [] ],
     [ "esp:GND.1","ldr:GND", "black", [] ],
-    [ "esp:D34",  "ldr:AO",  "yellow",[] ],
+    [ "esp:34",  "ldr:AO",  "yellow",[] ],
 
     [ "esp:3V3",  "dht:VCC", "red",   [] ],
     [ "esp:GND.1","dht:GND", "black", [] ],
-    [ "esp:D15",  "dht:SDA", "blue",  [] ],
+    [ "esp:15",  "dht:SDA", "blue",  [] ],
 
     [ "esp:5V",   "rele:VCC", "red",   [] ],
     [ "esp:GND.1","rele:GND", "black", [] ],
-    [ "esp:D23",  "rele:IN",  "orange",[] ],
+    [ "esp:23",  "rele:IN",  "orange",[] ],
 
     [ "esp:5V",   "lcd:VCC", "red",   [] ],
     [ "esp:GND.1","lcd:GND", "black", [] ],
-    [ "esp:D21",  "lcd:SDA", "green", [] ],
-    [ "esp:D22",  "lcd:SCL", "green", [] ]
+    [ "esp:21",  "lcd:SDA", "green", [] ],
+    [ "esp:22",  "lcd:SCL", "green", [] ]
   ],
   "dependencies": {}
 }
