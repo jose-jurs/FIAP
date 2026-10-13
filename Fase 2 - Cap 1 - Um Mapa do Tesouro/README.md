@@ -1,4 +1,4 @@
-# 🌱 FarmTech Solutions — Fase 2 · Sistema de Irrigação Inteligente (ESP32)
+# FarmTech Solutions — Fase 2 · Sistema de Irrigação Inteligente (ESP32)
 
 Projeto da **Fase 2** do curso de Inteligência Artificial e Machine Learning (FIAP).
 Dando continuidade à Fase 1 (cálculo de área plantada e monitoramento climático),
@@ -10,22 +10,21 @@ precisa de água e aciona uma bomba (relé). A cultura escolhida é o **café**.
 
 ---
 
-## 📑 Sumário
+## Sumário
 
-1. [Visão geral](#-visão-geral)
-2. [Substituições didáticas de sensores](#-substituições-didáticas-de-sensores)
-3. [Circuito e pinagem](#-circuito-e-pinagem)
-4. [Lógica de decisão da irrigação](#-lógica-de-decisão-da-irrigação)
-5. [Estrutura de arquivos](#-estrutura-de-arquivos)
-6. [Como executar no Wokwi](#-como-executar-no-wokwi)
-7. [Ir Além 1 — Python + OpenWeather](#-ir-além-1--python--openweather)
-8. [Ir Além 2 — Análise estatística em R](#-ir-além-2--análise-estatística-em-r)
-9. [Vídeo de demonstração](#-vídeo-de-demonstração)
-10. [Requisitos do enunciado atendidos](#-requisitos-do-enunciado-atendidos)
+1. [Visão geral](#visão-geral)
+2. [Substituições didáticas de sensores](#substituições-didáticas-de-sensores)
+3. [Circuito e pinagem](#circuito-e-pinagem)
+4. [Lógica de decisão da irrigação](#lógica-de-decisão-da-irrigação)
+5. [Estrutura de arquivos](#estrutura-de-arquivos)
+6. [Como executar no Wokwi](#como-executar-no-wokwi)
+7. [Python + OpenWeather](#python--openweather)
+8. [Análise estatística em R](#análise-estatística-em-r)
+9. [Requisitos do enunciado atendidos](#requisitos-do-enunciado-atendidos)
 
 ---
 
-## 🎯 Visão geral
+## Visão geral
 
 | O quê | Como |
 |---|---|
@@ -41,7 +40,7 @@ a bomba, imprimindo tudo no Monitor Serial e no LCD.
 
 ---
 
-## 🔁 Substituições didáticas de sensores
+## Substituições didáticas de sensores
 
 Como o Wokwi não tem sensores agrícolas reais, usamos as substituições pedidas no enunciado:
 
@@ -53,11 +52,11 @@ Como o Wokwi não tem sensores agrícolas reais, usamos as substituições pedid
 
 ---
 
-## 🔌 Circuito e pinagem
+## Circuito e pinagem
 
 ![Diagrama do circuito](docs/circuito.svg)
 
-> ⚠️ O SVG acima é o diagrama lógico. **Na entrega, inclua também o print real do
+> O SVG acima é o diagrama lógico. **Na entrega, inclua também o print real do
 > circuito montado no Wokwi** (`docs/wokwi_circuito.png`).
 
 | Componente | Pino do componente | GPIO do ESP32 |
@@ -74,7 +73,7 @@ Alimentação: LDR e DHT22 em **3V3**; relé e LCD em **5V**; todos os GNDs em c
 
 ---
 
-## 🧠 Lógica de decisão da irrigação
+## Lógica de decisão da irrigação
 
 A regra de acionamento da bomba é **do grupo** e foi calibrada para o **café**, que
 prefere solo levemente ácido e úmido (não encharcado).
@@ -106,7 +105,7 @@ prefere solo levemente ácido e úmido (não encharcado).
 
 ---
 
-## 📁 Estrutura de arquivos
+## Estrutura de arquivos
 
 ```
 fase2/
@@ -116,9 +115,9 @@ fase2/
 │   ├── diagram.json               # circuito do Wokwi (abre pronto)
 │   └── libraries.txt              # bibliotecas (DHT, LiquidCrystal_I2C)
 ├── ir_alem_python/
-│   └── clima_openweather.py       # Ir Além 1: previsão de chuva (OpenWeather)
+│   └── clima_openweather.py       # previsão de chuva (OpenWeather)
 ├── ir_alem_r/
-│   ├── analise_irrigacao.R        # Ir Além 2: estatística + regressão logística
+│   ├── analise_irrigacao.R        # estatística + regressão logística
 │   └── leituras.csv               # histórico de leituras (amostra)
 └── docs/
     ├── circuito.svg               # diagrama lógico das ligações
@@ -127,7 +126,7 @@ fase2/
 
 ---
 
-## ▶️ Como executar no Wokwi
+## Como executar no Wokwi
 
 1. Acesse [wokwi.com](https://wokwi.com) → **New Project** → **ESP32**.
 2. Substitua o conteúdo de `sketch.ino` pelo arquivo deste repositório.
@@ -139,7 +138,7 @@ fase2/
 
 ---
 
-## 🐍 Ir Além 1 — Python + OpenWeather
+## Python + OpenWeather
 
 `ir_alem_python/clima_openweather.py` consulta a previsão do tempo e decide se há
 chuva nas próximas horas. Como a integração automática Python↔Wokwi não é trivial no
@@ -164,7 +163,7 @@ chuva prevista — exatamente o comportamento de economia pedido no enunciado.
 
 ---
 
-## 📊 Ir Além 2 — Análise estatística em R
+## Análise estatística em R
 
 `ir_alem_r/analise_irrigacao.R` lê o histórico `leituras.csv`, calcula estatísticas
 descritivas e ajusta uma **regressão logística** que estima a probabilidade de a
@@ -181,17 +180,7 @@ de probabilidade e decide **LIGAR a bomba**.
 
 ---
 
-## 🎬 Vídeo de demonstração
-
-Link (YouTube, não listado, até 5 min): **`<ADICIONAR_LINK_AQUI>`**
-
-Roteiro sugerido: apresentar o circuito → mexer nos botões NPK e no LDR (pH) → variar o
-DHT22 (umidade) → mostrar a bomba ligando/desligando → rodar o Python (chuva) e digitar
-`C`/`S` no Serial → rodar a análise em R.
-
----
-
-## 📋 Requisitos do enunciado atendidos
+## Requisitos do enunciado atendidos
 
 - [x] **3 botões** simulando níveis de N, P e K (true/false)
 - [x] **LDR** representando o pH do solo (escala 0–14)
