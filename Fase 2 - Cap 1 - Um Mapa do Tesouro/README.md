@@ -20,7 +20,8 @@ precisa de água e aciona uma bomba (relé). A cultura escolhida é o **café**.
 6. [Como executar no Wokwi](#como-executar-no-wokwi)
 7. [Python + OpenWeather](#python--openweather)
 8. [Análise estatística em R](#análise-estatística-em-r)
-9. [Requisitos do enunciado atendidos](#requisitos-do-enunciado-atendidos)
+9. [Vídeo de demonstração](#vídeo-de-demonstração)
+10. [Requisitos do enunciado atendidos](#requisitos-do-enunciado-atendidos)
 
 ---
 
@@ -183,6 +184,12 @@ de probabilidade e decide **LIGAR a bomba**.
 
 ---
 
+## Vídeo de demonstração
+
+[Assistir no YouTube](https://youtube.com/shorts/oImNKx62skk)
+
+---
+
 ## Requisitos do enunciado atendidos
 
 - [x] **3 botões** simulando níveis de N, P e K (true/false)
@@ -194,7 +201,7 @@ de probabilidade e decide **LIGAR a bomba**.
 - [x] **README.md** em Markdown com imagem do circuito
 - [x] **Ir Além 1:** integração Python + API pública (OpenWeather) via Serial
 - [x] **Ir Além 2:** análise estatística em R (descritiva + regressão logística)
-- [ ] **Vídeo** no YouTube (até 5 min) — adicionar link
+- [x] **Vídeo** no YouTube ([link](https://youtube.com/shorts/oImNKx62skk))
 - [x] **Print real do circuito no Wokwi** (`docs/wokwi_circuito.png`)
 
 ---
