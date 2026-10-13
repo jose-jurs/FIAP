@@ -1,0 +1,4 @@
+# Bibliotecas usadas no projeto (Wokwi instala automaticamente)
+DHT sensor library
+Adafruit Unified Sensor
+LiquidCrystal I2C
